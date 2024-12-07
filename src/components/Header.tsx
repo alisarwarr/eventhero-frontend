@@ -9,10 +9,8 @@ export default function Header(): JSX.Element {
             <GlobalButton
                 text="Login"
                 icon={<LoginSvg className="w-3 sm:w-3.5 lg:w-4 h-3 sm:h-3.5 lg:h-4" />}
-                onClick={() => {
-                    alert("Login!");
-                }}
-                outline
+                onClick={() => alert("Login!")}
+                hovered
             />
 
         </div>

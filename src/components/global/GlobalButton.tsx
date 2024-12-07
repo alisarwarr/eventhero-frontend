@@ -4,7 +4,9 @@ type GlobalButtonType = {
     onClick: () => void;
     className?: string;
     theme?: 'default' | 'primary',
+    hovered?: boolean;
     outline?: boolean;
+    isChipSelected?: boolean;
 }
 
 
@@ -14,16 +16,19 @@ export default function GlobalButton({
     onClick,
     className,
     theme = 'default',
-    outline = false
+    hovered = false,
+    isChipSelected
 }: GlobalButtonType): JSX.Element {
 
     let btnColor = "";
 
     if (theme === 'default') {
-        btnColor = 'text-primary bg-white border border-white ' + (outline ? 'hover:text-white hover:bg-primary' : '');
+        if (isChipSelected === undefined) btnColor = 'text-primary bg-white border border-white ' + (hovered ? 'hover:text-white hover:bg-primary' : '');
+        else btnColor = 'border border-white hover:text-primary hover:bg-white ' + (isChipSelected ? 'text-primary bg-white ' : 'text-white bg-primary ') + 'justify-center h-10 text-xs lg:text-sm rounded-full';
     }
     else if (theme === 'primary') {
-        btnColor = 'text-white bg-primary border border-primary ' + (outline ? 'hover:text-primary hover:bg-white' : '');
+        if (isChipSelected === undefined) btnColor = 'text-white bg-primary border border-primary ' + (hovered ? 'hover:text-primary hover:bg-white' : '');
+        else btnColor = 'border border-primary hover:text-white hover:bg-primary ' + (isChipSelected ? 'text-white bg-primary ' : 'text-primary bg-white ') + 'justify-center h-10 text-xs lg:text-sm rounded-full';
     }
 
     return (

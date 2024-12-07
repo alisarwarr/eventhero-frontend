@@ -1,16 +1,24 @@
 type GlobalTextType = {
     text: string;
     className?: string;
+    size?: 'default' | 'medium';
 }
 
 
 export default function GlobalText({
     text,
-    className
+    className,
+    size = 'default'
 }: GlobalTextType): JSX.Element {
+
+    let fontSize = "";
+
+    if (size === 'default') fontSize = 'text-xs sm:text-sm lg:text-base';
+    else if (size === 'medium') fontSize = 'text-xs lg:text-sm';
+
     return (
         <p
-            className={`text-xs sm:text-sm lg:text-base text-primary font-semibold tracking-wide w-full ` + className}
+            className={`${fontSize} text-primary font-semibold tracking-wide w-full ` + className}
             dangerouslySetInnerHTML={{ __html: text }}
         />
     )

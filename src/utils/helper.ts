@@ -40,3 +40,26 @@ export const events = [
         description: "18 Jul 2025",
     }
 ];
+
+
+export const interests = [
+    "Jazz",
+    "Theatre performance",
+    "Conferences",
+    "Trade shows",
+    "Festivals",
+    "Amapiano",
+    "Live Events",
+    "Sports events",
+    "Art event",
+    "Fashion events",
+    "Entertainment event",
+    "Film Festivals",
+    "Music Performance",
+    "Workshops",
+    "Wine Shows",
+    "Concert",
+    "Car Shows",
+    "Aviation Shows",
+    "Other"
+];

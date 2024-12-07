@@ -34,7 +34,7 @@ export const router = createBrowserRouter([
                 element: <SuspenseWrapper children={<AuthLayout />} />,
                 children: [
                     { path: "signin", element: <SuspenseWrapper> <Signin /> </SuspenseWrapper> },
-                    { path: "signup", element: <SuspenseWrapper> <Signup /> </SuspenseWrapper> }
+                    { path: "signup", element: <SuspenseWrapper> <Signup /> </SuspenseWrapper> },
                 ]
             },
             {

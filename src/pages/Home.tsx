@@ -12,7 +12,7 @@ export default function Home(): JSX.Element {
 
             <Header />
 
-            <div className="w-full px-4 sm:px-4 lg:px-[2.8rem] space-y-4 sm:space-y-5 lg:space-y-7 pb-9 sm:pb-11 lg:pb-14">
+            <div className="w-full px-4 lg:px-[2.8rem] pb-9 sm:pb-11 lg:pb-14 space-y-4 sm:space-y-5 lg:space-y-7">
 
                 <div className="pt-16 sm:pt-20 lg:pt-24 pb-8 sm:pb-14 lg:pb-12">
                     <GlobalHeading
@@ -31,19 +31,15 @@ export default function Home(): JSX.Element {
                         <div className="flex items-center gap-2 lg:gap-3">
                             <GlobalButton
                                 text="Ticket Seller"
-                                onClick={() => {
-                                    alert("Ticket Seller!");
-                                }}
+                                onClick={() => alert("Ticket Seller!")}
                                 theme="primary"
-                                outline
+                                hovered
                             />
                             <GlobalButton
                                 text="Ticket Buyer"
-                                onClick={() => {
-                                    alert("Ticket Buyer!");
-                                }}
+                                onClick={() => alert("Ticket Buyer!")}
                                 theme="primary"
-                                outline
+                                hovered
                             />
                         </div>
                     </div>
