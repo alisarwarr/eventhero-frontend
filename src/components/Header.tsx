@@ -4,7 +4,7 @@ import { LoginSvg } from "../images/svgIcon";
 
 export default function Header(): JSX.Element {
     return (
-        <div className="bg-primary flex items-center justify-end px-2.5 sm:px-3.5 lg:px-5 py-2 sm:py-2 lg:py-3.5">
+        <div className="bg-primary flex items-center justify-end px-2.5 sm:px-3.5 lg:px-5 py-2 sm:py-2 lg:py-3.5 w-full">
 
             <GlobalButton
                 text="Login"

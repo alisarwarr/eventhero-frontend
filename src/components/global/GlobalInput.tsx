@@ -34,7 +34,7 @@ export default function GlobalInput({
                 type={type}
                 value={value}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value)}
-                className={`bg-white text-black border-2 border-primary outline-none self-start p-0.5 sm:p-1 lg:p-1.5 rounded-md ` + className}
+                className={`bg-secondary text-black border-2 border-primary outline-none self-start p-0.5 sm:p-1 lg:p-1.5 rounded-md ` + className}
             />
 
         </div>

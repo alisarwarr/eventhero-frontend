@@ -24,12 +24,12 @@ export default function GlobalButton({
     let btnColor = "";
 
     if (theme === 'default') {
-        if (isChipSelected === undefined) btnColor = 'text-primary bg-white border border-primary ' + (hovered ? 'hover:text-white hover:bg-primary' : '');
-        else btnColor = 'border-2 border-white hover:text-primary hover:bg-white ' + (isChipSelected ? 'text-primary bg-white ' : 'text-white bg-primary ') + 'justify-center h-10 text-xs lg:text-sm !rounded-xl';
+        if (isChipSelected === undefined) btnColor = 'text-primary bg-secondary border border-primary ' + (hovered ? 'hover:text-secondary hover:bg-primary' : '');
+        else btnColor = 'border-2 border-white hover:text-primary hover:bg-secondary ' + (isChipSelected ? 'text-primary bg-secondary ' : 'text-secondary bg-primary ') + 'justify-center h-10 text-xs lg:text-sm !rounded-xl';
     }
     else if (theme === 'primary') {
-        if (isChipSelected === undefined) btnColor = 'text-white bg-primary border border-primary ' + (hovered ? 'hover:text-primary hover:bg-white' : '');
-        else btnColor = 'border border-primary hover:text-white hover:bg-primary ' + (isChipSelected ? 'text-white bg-primary ' : 'text-primary bg-white ') + 'justify-center h-10 text-xs lg:text-sm !rounded-xl';
+        if (isChipSelected === undefined) btnColor = 'text-secondary bg-primary border border-primary ' + (hovered ? 'hover:text-primary hover:bg-secondary' : '');
+        else btnColor = 'border border-primary hover:text-secondary hover:bg-primary ' + (isChipSelected ? 'text-secondary bg-primary ' : 'text-primary bg-secondary ') + 'justify-center h-10 text-xs lg:text-sm !rounded-xl';
     }
 
     let fontSize = "";

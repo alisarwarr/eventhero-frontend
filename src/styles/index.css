@@ -1,5 +1,5 @@
 /* FONT-FAMILY */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jaro:opsz@6..72&family=Parkinsans:wght@300..800&display=swap');
 
 
 
@@ -12,5 +12,7 @@
 
 /* GLOBAL-STYLE */
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }

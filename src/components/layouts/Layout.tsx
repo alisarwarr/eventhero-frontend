@@ -16,5 +16,5 @@ export default function Layout(): JSX.Element {
 }
 
 function MainLayout(): JSX.Element {
-    return <> <Outlet /> </>;
+    return <div className="m-auto min-h-screen flex flex-col justify-center items-center bg-secondary"> <Outlet /> </div>;
 }

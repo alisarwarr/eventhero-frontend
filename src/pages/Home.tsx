@@ -1,18 +1,22 @@
+import { useNavigate } from "react-router-dom";
+import { events } from "../utils/helper";
 import Header from "../components/Header";
 import GlobalButton from "../components/global/GlobalButton";
 import GlobalHeading from "../components/global/GlobalHeading";
 import GlobalImageCard from "../components/global/GlobalImageCard";
 import GlobalText from "../components/global/GlobalText";
-import { events } from "../utils/helper";
 
 
-export default function Home(): JSX.Element {
+export default function Page(): JSX.Element {
+    const navigate = useNavigate();
+
+
     return (
-        <div className="max-w-[1600px] m-auto min-h-screen flex flex-col">
+        <>
 
             <Header />
 
-            <div className="w-full px-4 lg:px-[2.8rem] pb-9 sm:pb-11 lg:pb-14 space-y-4 sm:space-y-5 lg:space-y-7">
+            <div className="px-4 lg:px-[2.8rem] pb-9 sm:pb-11 lg:pb-14 space-y-4 sm:space-y-5 lg:space-y-7 w-full">
 
                 <div className="pt-16 sm:pt-20 lg:pt-24 pb-8 sm:pb-14 lg:pb-12">
                     <GlobalHeading
@@ -32,14 +36,14 @@ export default function Home(): JSX.Element {
                             <GlobalButton
                                 text="Ticket Seller"
                                 className="!py-2 lg:!py-1.5 !px-4 lg:!px-3.5"
-                                onClick={() => alert("Ticket Seller!")}
+                                onClick={() => navigate('/auth/signup?type=ticket-seller')}
                                 theme="primary"
                                 hovered
                             />
                             <GlobalButton
                                 text="Ticket Buyer"
                                 className="!py-2 lg:!py-1.5 !px-4 lg:!px-3.5"
-                                onClick={() => alert("Ticket Buyer!")}
+                                onClick={() => navigate('/auth/signup?type=ticket-buyer')}
                                 theme="primary"
                                 hovered
                             />
@@ -49,7 +53,7 @@ export default function Home(): JSX.Element {
                     <div className="space-y-2 sm:space-y-5">
                         <GlobalHeading
                             text="Upcoming Events"
-                            className="text-center md:text-left !text-black"
+                            className="text-center md:text-left !text-primary"
                             size="medium"
                         />
                         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-2">
@@ -57,10 +61,10 @@ export default function Home(): JSX.Element {
                                 events
                                     .map((item: any, index: number) => (
                                         <GlobalImageCard
-                                            imageSrc="https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg"
+                                            key={index}
+                                            imageSrc={item.imageSrc}
                                             title={item.title}
                                             desciption={item.description}
-                                            key={index}
                                         />
                                     ))
                             }
@@ -71,6 +75,6 @@ export default function Home(): JSX.Element {
 
             </div>
 
-        </div>
+        </>
     )
 }

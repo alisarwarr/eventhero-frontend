@@ -47,7 +47,7 @@ export default function GlobalOtp({
                     value={value[index]}
                     onChange={(e) => handleChange(e.target.value, index)}
                     onKeyDown={(e) => handleKeyDown(e, index)}
-                    className={`w-7 h-7 sm:w-9 sm:h-9 lg:w-10 lg:h-10 text-center text-xs sm:text-sm lg:text-base bg-white text-black font-semibold border-2 border-primary outline-none self-start p-0.5 sm:p-1 lg:p-1.5 rounded-md ` + className}
+                    className={`w-7 h-7 sm:w-9 sm:h-9 lg:w-10 lg:h-10 text-center text-xs sm:text-sm lg:text-base bg-secondary text-black font-semibold border-2 border-primary outline-none self-start p-0.5 sm:p-1 lg:p-1.5 rounded-md ` + className}
                 />
             ))}
 

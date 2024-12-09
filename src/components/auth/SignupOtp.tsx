@@ -1,0 +1,54 @@
+import { useEffect } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import GlobalText from "../global/GlobalText";
+import GlobalButton from "../global/GlobalButton";
+import GlobalOtp from "../global/GlobalOtp";
+
+
+type SignupOtpType = {
+    setOtp: (value: string) => void;
+}
+
+
+export default function SignupOtp({
+    setOtp
+}: SignupOtpType): JSX.Element {
+    const navigate = useNavigate();
+    const [searchParams] = useSearchParams();
+    const type = searchParams.get('type');
+
+
+    useEffect(() => {
+        if (
+            (type && (type !== 'ticket-buyer'))
+        ||  !type
+        ) {
+            navigate("/");
+        }
+    }, []);
+
+
+    return (
+        <>
+            <GlobalText
+                text="Check your inbox, we have sent you an OTP to the following number <span style='color: red;'>+27 83 123 4567</span>"
+                className="text-center !text-primary"
+            />
+            <GlobalText
+                text="If you have not received the OTP"
+                className="text-center !text-primary"
+            />
+            <GlobalButton
+                text="Resend"
+                onClick={() => alert("Resend!")}
+                theme="primary"
+                className="mx-auto"
+            />
+            <GlobalOtp
+                length={6}
+                onChange={(newValue) => setOtp(newValue as string)}
+                className="my-2.5"
+            />
+        </>
+    )
+}
