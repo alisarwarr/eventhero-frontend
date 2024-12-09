@@ -1,9 +1,9 @@
 //PAGES
 import {
     //Layout
-    Home, About, Contact, Error,
+    Home, TermsAndConditions, Error,
     //AuthLayout
-    Signin, Signup
+    Signup
 } from "../pages";
 //REACT-ROUTER-DOM
 import { createBrowserRouter, Outlet } from "react-router-dom";
@@ -25,15 +25,13 @@ export const router = createBrowserRouter([
                 element: <SuspenseWrapper> <Layout /> </SuspenseWrapper>,
                 children: [
                     { path: "/", element: <SuspenseWrapper> <Home /> </SuspenseWrapper> },
-                    { path: "about", element: <SuspenseWrapper> <About /> </SuspenseWrapper> },
-                    { path: "contact", element: <SuspenseWrapper> <Contact /> </SuspenseWrapper> }
+                    { path: "/terms-and-conditions", element: <SuspenseWrapper> <TermsAndConditions /> </SuspenseWrapper> },
                 ]
             },
             {
                 path: "/auth",
                 element: <SuspenseWrapper children={<AuthLayout />} />,
                 children: [
-                    { path: "signin", element: <SuspenseWrapper> <Signin /> </SuspenseWrapper> },
                     { path: "signup", element: <SuspenseWrapper> <Signup /> </SuspenseWrapper> },
                 ]
             },

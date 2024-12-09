@@ -13,8 +13,12 @@ export default function GlobalText({
 
     let fontSize = "";
 
-    if (size === 'default') fontSize = 'text-xs sm:text-sm lg:text-base';
-    else if (size === 'medium') fontSize = 'text-xs lg:text-sm';
+    if (size === 'default') {
+        fontSize = 'text-xs sm:text-sm lg:text-base';
+    }
+    else if (size === 'medium') {
+        fontSize = 'text-xs lg:text-sm';
+    }
 
     return (
         <p

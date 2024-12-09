@@ -1,3 +1,6 @@
+import GlobalText from "./GlobalText";
+
+
 type GlobalInputType = {
     type: 'text' | 'number' | 'password'
     value: string | number;
@@ -16,14 +19,16 @@ export default function GlobalInput({
 }: GlobalInputType): JSX.Element {
     return (
         <div
-            className="space-y-1 lg:space-y-2"
+            className="space-y-1"
         >
 
-            <p
-                className="text-xs md:text-sm text-primary tracking-wide"
-            >
-                {label}
-            </p>
+            {label && (
+                <GlobalText
+                    text={label}
+                    className="!text-primary"
+                    size="medium"
+                />
+            )}
 
             <input
                 type={type}

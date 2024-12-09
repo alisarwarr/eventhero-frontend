@@ -13,8 +13,12 @@ export default function GlobalHeading({
 
     let fontSize = "";
 
-    if (size === 'default') fontSize = 'text-3xl sm:text-4xl md:text-5xl';
-    else if (size === 'medium') fontSize = 'text-2xl sm:text-3xl md:text-4xl';
+    if (size === 'default') {
+        fontSize = 'text-3xl sm:text-4xl md:text-5xl';
+    }
+    else if (size === 'medium') {
+        fontSize = 'text-2xl sm:text-3xl md:text-4xl';
+    }
 
     return (
         <p

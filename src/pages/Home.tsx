@@ -31,12 +31,14 @@ export default function Home(): JSX.Element {
                         <div className="flex items-center gap-2 lg:gap-3">
                             <GlobalButton
                                 text="Ticket Seller"
+                                className="!py-2 lg:!py-1.5 !px-4 lg:!px-3.5"
                                 onClick={() => alert("Ticket Seller!")}
                                 theme="primary"
                                 hovered
                             />
                             <GlobalButton
                                 text="Ticket Buyer"
+                                className="!py-2 lg:!py-1.5 !px-4 lg:!px-3.5"
                                 onClick={() => alert("Ticket Buyer!")}
                                 theme="primary"
                                 hovered
