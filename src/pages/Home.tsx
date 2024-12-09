@@ -16,7 +16,7 @@ export default function Page(): JSX.Element {
 
             <Header />
 
-            <div className="px-4 lg:px-[2.8rem] pb-9 sm:pb-11 lg:pb-14 space-y-4 sm:space-y-5 lg:space-y-7 w-full">
+            <div className="px-4 lg:px-[2.8rem] pb-9 sm:pb-11 lg:pb-14 space-y-4 sm:space-y-5 lg:space-y-7 w-11/12 sm:w-10/12 xl:w-3/4">
 
                 <div className="pt-16 sm:pt-20 lg:pt-24 pb-8 sm:pb-14 lg:pb-12">
                     <GlobalHeading
@@ -53,7 +53,7 @@ export default function Page(): JSX.Element {
                     <div className="space-y-2 sm:space-y-5">
                         <GlobalHeading
                             text="Upcoming Events"
-                            className="text-center md:text-left !text-primary"
+                            className="text-center md:text-left"
                             size="medium"
                         />
                         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-2">

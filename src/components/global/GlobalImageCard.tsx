@@ -35,7 +35,7 @@ export default function GlobalImageCard({
 
                 <GlobalText
                     text={desciption}
-                    className="text-center !text-primary"
+                    className="text-center !text-black"
                     size="medium"
                 />
 

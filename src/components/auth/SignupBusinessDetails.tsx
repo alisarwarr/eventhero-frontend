@@ -26,7 +26,7 @@ export default function SignupBusinessDetails(): JSX.Element {
         >
             <GlobalText
                 text="Confirm Details"
-                className="text-center !text-primary"
+                className="text-center !text-black"
             />
             <div className="space-y-2 sm:space-y-3 lg:space-y-4">
                 <div className="flex items-start">
@@ -37,7 +37,7 @@ export default function SignupBusinessDetails(): JSX.Element {
                     />
                     <GlobalText
                         text="2024/05078/09"
-                        className="!text-primary !font-thin"
+                        className="!text-primary !font-light"
                         size="medium"
                     />
                 </div>
@@ -49,7 +49,7 @@ export default function SignupBusinessDetails(): JSX.Element {
                     />
                     <GlobalText
                         text="John Doe Trading"
-                        className="!text-primary !font-thin"
+                        className="!text-primary !font-light"
                         size="medium"
                     />
                 </div>
@@ -61,7 +61,7 @@ export default function SignupBusinessDetails(): JSX.Element {
                     />
                     <GlobalText
                         text="In Business"
-                        className="!text-primary !font-thin"
+                        className="!text-primary !font-light"
                         size="medium"
                     />
                 </div>
@@ -73,7 +73,7 @@ export default function SignupBusinessDetails(): JSX.Element {
                     />
                     <GlobalText
                         text="7877974664"
-                        className="!text-primary !font-thin"
+                        className="!text-primary !font-light"
                         size="medium"
                     />
                 </div>
@@ -85,7 +85,7 @@ export default function SignupBusinessDetails(): JSX.Element {
                     />
                     <GlobalText
                         text="12 Fifteen Avenue, 75 Apartment, Johannesburg, Gauteng, 1685"
-                        className="!text-primary !font-thin"
+                        className="!text-primary !font-light"
                         size="medium"
                     />
                 </div>
@@ -97,7 +97,7 @@ export default function SignupBusinessDetails(): JSX.Element {
                     />
                     <GlobalText
                         text="John Doe, Mary Doe, John Smith"
-                        className="!text-primary !font-thin"
+                        className="!text-primary !font-light"
                         size="medium"
                     />
                 </div>

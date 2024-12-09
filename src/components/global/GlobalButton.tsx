@@ -1,12 +1,13 @@
 type GlobalButtonType = {
     text: string;
     icon?: JSX.Element;
-    onClick: () => void;
+    onClick?: () => void;
     className?: string;
     theme?: 'default' | 'primary',
     hovered?: boolean;
     isChipSelected?: boolean;
     size?: 'default' | 'medium';
+    type?: 'button' | 'submit' | 'reset';
 }
 
 
@@ -18,13 +19,14 @@ export default function GlobalButton({
     theme = 'default',
     hovered = false,
     isChipSelected,
-    size = 'default'
+    size = 'default',
+    type = 'button'
 }: GlobalButtonType): JSX.Element {
 
     let btnColor = "";
 
     if (theme === 'default') {
-        if (isChipSelected === undefined) btnColor = 'text-primary bg-secondary border border-primary ' + (hovered ? 'hover:text-secondary hover:bg-primary' : '');
+        if (isChipSelected === undefined) btnColor = 'text-primary bg-secondary border border-secondary ' + (hovered ? 'hover:text-secondary hover:bg-primary' : '');
         else btnColor = 'border-2 border-white hover:text-primary hover:bg-secondary ' + (isChipSelected ? 'text-primary bg-secondary ' : 'text-secondary bg-primary ') + 'justify-center h-10 text-xs lg:text-sm !rounded-xl';
     }
     else if (theme === 'primary') {
@@ -43,8 +45,9 @@ export default function GlobalButton({
 
     return (
         <button
-            onClick={onClick}
+            onClick={type === 'submit' ? undefined : onClick}
             className={`${fontSize} ${btnColor} font-semibold tracking-wide py-1.5 px-5 lg:px-10 rounded-md flex items-center gap-1 lg:gap-2 ` + className}
+            type={type}
         >
             {text}
             {icon}

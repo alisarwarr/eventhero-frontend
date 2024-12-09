@@ -32,19 +32,19 @@ export default function SignupBusinessOtp({
         <>
             <GlobalText
                 text="OTP"
-                className="text-center !text-primary"
+                className="text-center !text-black"
                 size="medium"
             />
             <div
                 className="py-3 space-y-2 sm:space-y-3 lg:space-y-4"
             >
                 <GlobalText
-                    text="Check your inbox, we have sent you an OTP to the following number <span style='color: red;'>+27 83 123 4567</span>"
-                    className="text-center !text-primary"
+                    text="Check your inbox, we have sent you an OTP to the following number <span style='color: #36454F;'>+27 83 123 4567</span>"
+                    className="text-center"
                 />
                 <GlobalText
                     text="If you have not received the OTP"
-                    className="text-center !text-primary"
+                    className="text-center"
                 />
                 <GlobalButton
                     text="Resend"

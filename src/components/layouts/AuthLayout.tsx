@@ -16,5 +16,6 @@ export default function AuthLayout(): JSX.Element {
 }
 
 function MainAuthLayout(): JSX.Element {
-    return <div className="m-auto min-h-screen flex flex-col justify-center items-center bg-secondary"> <Outlet /> </div>;
+    let custombackgorund = 'bg-gradient-radial bg-[length:300%_300%]';
+    return <div className={`m-auto min-h-screen flex flex-col justify-center items-center ` + custombackgorund}> <Outlet /> </div>;
 }

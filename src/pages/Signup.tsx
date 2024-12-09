@@ -17,27 +17,39 @@ import SignupBusinessOtp from "../components/auth/SignupBusinessOtp";
 
 
 export default function Page(): JSX.Element {
-    //confirmation
+    // confirmation
     const [email, setEmail] = useState('');
+    console.log("email", email);
 
-    //password
+    // password
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
+    console.log("password", password);
+    console.log("confirmPassword", confirmPassword);
 
-    //details
+    // details
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
     const [dateOfBirth, setDateOfBirth] = useState('');
     const [cellphone, setCellphone] = useState('');
+    console.log("name", name);
+    console.log("surname", surname);
+    console.log("dateOfBirth", dateOfBirth);
+    console.log("cellphone", cellphone);
 
-    //address
+    // address
     const [streetAddress, setStreetAddress] = useState('');
     const [city, setCity] = useState('');
     const [province, setProvince] = useState('');
     const [country, setCountry] = useState('');
+    console.log("streetAddress", streetAddress);
+    console.log("city", city);
+    console.log("province", province);
+    console.log("country", country);
 
-    //other
+    // other
     const [other, setOther] = useState('');
+    console.log("other", other);
 
     //otp
     const [otp, setOtp] = useState('');
@@ -96,7 +108,6 @@ export default function Page(): JSX.Element {
                 {
                     !stage && (
                         <Signup
-                            email={email}
                             setEmail={setEmail}
                         />
                     )
@@ -109,9 +120,7 @@ export default function Page(): JSX.Element {
                 {
                     stage === 'password' && (
                         <SignupPassword
-                            password={password}
                             setPassword={setPassword}
-                            confirmPassword={confirmPassword}
                             setConfirmPassword={setConfirmPassword}
                         />
                     )
@@ -119,13 +128,9 @@ export default function Page(): JSX.Element {
                 {
                     stage === 'details' && (
                         <SignupDetails
-                            name={name}
                             setName={setName}
-                            surname={surname}
                             setSurname={setSurname}
-                            dateOfBirth={dateOfBirth}
                             setDateOfBirth={setDateOfBirth}
-                            cellphone={cellphone}
                             setCellphone={setCellphone}
                         />
                     )
@@ -133,13 +138,9 @@ export default function Page(): JSX.Element {
                 {
                     stage === 'address' && (
                         <SignupAddress
-                            streetAddress={streetAddress}
                             setStreetAddress={setStreetAddress}
-                            city={city}
                             setCity={setCity}
-                            province={province}
                             setProvince={setProvince}
-                            country={country}
                             setCountry={setCountry}
                         />
                     )

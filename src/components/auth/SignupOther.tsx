@@ -33,8 +33,8 @@ export default function SignupOther({
     return (
         <>
             <GlobalText
-                text="Add your interest as many as you need separated by commas. <i style='color: gray; text'>(e.g Kwaito, pop)</i>"
-                className="text-center !text-primary"
+                text="Add your interest as many as you need separated by commas. <i style='color: gray;'>(e.g Kwaito, pop)</i>"
+                className="text-center !text-black"
                 size="medium"
             />
             <div

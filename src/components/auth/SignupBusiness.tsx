@@ -31,7 +31,7 @@ export default function SignupBusiness({
         <>
             <GlobalText
                 text="Business"
-                className="text-center !text-primary"
+                className="text-center !text-black"
                 size="medium"
             />
             <div

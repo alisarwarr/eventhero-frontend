@@ -31,12 +31,12 @@ export default function SignupOtp({
     return (
         <>
             <GlobalText
-                text="Check your inbox, we have sent you an OTP to the following number <span style='color: red;'>+27 83 123 4567</span>"
-                className="text-center !text-primary"
+                text="Check your inbox, we have sent you an OTP to the following number <span style='color: #36454F;'>+27 83 123 4567</span>"
+                className="text-center !text-black"
             />
             <GlobalText
                 text="If you have not received the OTP"
-                className="text-center !text-primary"
+                className="text-center"
             />
             <GlobalButton
                 text="Resend"

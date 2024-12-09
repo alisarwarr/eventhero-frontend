@@ -6,12 +6,12 @@ export default function SignupConfirmation(): JSX.Element {
     return (
         <>
             <GlobalText
-                text="Check your inbox, we have sent you a confirmation email to the following <span style='color: red;'>johnd@emailaddres.com</span>"
-                className="text-center !text-primary"
+                text="Check your inbox, we have sent you a confirmation email to the following <span style='color: #36454F;'>johnd@emailaddres.com</span>"
+                className="text-center"
             />
             <GlobalText
                 text="If you have not received the email"
-                className="text-center !text-primary"
+                className="text-center"
             />
             <GlobalButton
                 text="Resend"

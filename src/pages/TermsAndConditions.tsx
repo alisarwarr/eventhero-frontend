@@ -33,12 +33,12 @@ export default function Page(): JSX.Element {
                     <div className="space-y-1 lg:space-y-2">
                         <GlobalText
                             text="Introduction"
-                            className="text-center !text-primary"
+                            className="text-center"
                             size="medium"
                         />
                         <GlobalText
                             text="Welcome to [Your Business Name]! These terms and conditions outline the rules and regulations for the use of [Your Business Name]'s Website, located at [yourwebsite.com]. By accessing this website, we assume you accept these terms and conditions. Do not continue to use [Your Business Name] if you do not agree to all of the terms and conditions stated on this page."
-                            className="text-center !text-primary"
+                            className="text-center"
                             size="medium"
                         />
                     </div>
@@ -46,12 +46,12 @@ export default function Page(): JSX.Element {
                     <div className="space-y-1 lg:space-y-2">
                         <GlobalText
                             text="License"
-                            className="text-center !text-primary"
+                            className="text-center"
                             size="medium"
                         />
                         <GlobalText
                             text="Unless otherwise stated, [Your Business Name] and/or its licensors own the intellectual property rights for all material on [Your Business Name]. All intellectual property rights are reserved. You may access this from [Your Business Name] for your own personal use subjected to restrictions set in these terms and conditions."
-                            className="text-center !text-primary"
+                            className="text-center"
                             size="medium"
                         />
                     </div>
