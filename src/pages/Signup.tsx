@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { interests, stages } from "../utils/helper";
 import GlobalHeading from "../components/global/GlobalHeading";
-import Signup from "../components/auth/signup";
+import Signup from "../components/auth/Signup";
 import SignupConfirmation from "../components/auth/SignupConfirmation";
 import SignupPassword from "../components/auth/SignupPassword";
 import SignupDetails from "../components/auth/SignupDetails";
