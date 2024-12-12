@@ -50,7 +50,7 @@ export default function GlobalButton({
             type={type}
         >
             {text}
-          <div className="h-2">  {icon}</div>
+            {icon}
         </button>
     )
 }
